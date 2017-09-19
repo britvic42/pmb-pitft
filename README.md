@@ -1,15 +1,17 @@
 About this:
 ===========
 
-This is a fork of ISO-B's pmb-pitft project with a few additions.
+This is a fork of ISO-B's pmb-pitft project with a few additions. This was running on a RPi 2 with an Adafruit 3.5" TFT resistive screen and Volumio 1.55.
+
 
 Additions:
 ==========
 
-- support for 3.5" tft screens with 480x320px
+- support for 3.5" TFT screens with 480x320px
 - additional screen for library file browsing - page-by-page touch swipe through library folders, folders/tracks can be added to playlist
 - additional screen for playlist browsing - delete tracks/whole playlist
 - additional screen for MPD settings (repeat/consume/refresh etc)
+- touch "timeline" to jump to that time in the track
 - cover art 'cover.jpg' taken from folder of current song
 - sample rate / filetype displayed
 - IRKey remote - playback control and playlist/library browse functions accessed from Adafruit IRKey remote(USB k/board)
@@ -18,12 +20,35 @@ Additions:
 Installing:
 ===========
 
-Follow the original install instructions to get your screen working, as shown in the original readme, shown below. 
+Use Adafruit install procedure to get your 3.5" screen working and then skip to the part of the instructions below at the point where pygame is installed. (starts at "After that editing and creating files its time to give some commands to pi.")
 
+then:
+ - download the following fonts from FontSquirrel, Bebas-Neue Regular and Bebas-Neue Bold. Create a new folder called "BebasNeue-TTF". Copy the two fonts into this new folder.
+ 
 
 
 Notes:
 ======
+
+The screen layout is arranged for a screen that has been rotated 270 degs.
+
+To go to the library list, touch the album artwork on the main screen (or touch where the artwork will display)
+   - swipe up or down to go through the folders in your library. touch the scrollbar to go to that point in the library.
+   - touch the folder name to go into a folder, touch the "folder back" icon (bottom right) to go back up the folder hierarchy
+   - to add a folder to the playlist, touch the "plus folder" icon on the left next to the folder. To add a track, touch the "music plus" icon to the left of the track
+
+To go to the playlist, touch the track name
+   - touch the "x" to the left of the track to delete it from the playlist. Touch the garbage can to remove all tracks
+   -  From the playlist screen, touch the "gears" icon to go to the settings screen. Each icon is a toggle, that has blue text when enabled.
+   
+   
+To Do:
+======
+
+ - smooth scrolling through the library & playlist when swiping (rather than a page-by-page scrolling)
+ - Swiping on the mainscreen to go to the library/playlist and settings screens. ie. swipe left to go to the playlist, swipe right to go to the music library list
+ - list library by artwork rather than showing folders
+ - clean up the code, utilizing proper OOP techniques.
 
 
 PMB-PiTFT (Pi MusicBox PiTFT) is small Python program/script/whatever that uses mopidy's mpd-api to show controlling ui on Raspberry Pi's screen.
