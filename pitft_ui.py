@@ -27,7 +27,7 @@ class PmbPitft:
 		self.logger = logger
 
 		# Paths
-		self.path = os.path.dirname(sys.argv[0]) + "/root/pmb-pitft/pmb-pitft2/"
+		self.path = os.path.dirname(sys.argv[0]) + "/root/pmb-pitft/pmb-pitft/"
 		os.chdir(self.path)
 
 		# Fonts
