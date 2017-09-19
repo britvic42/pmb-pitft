@@ -1,0 +1,9 @@
+i = 0 # default for playlist datum track
+curplaylistlength = 0  # number of tracks in current playlist
+libi = [0] # first directory to show in library view
+URL = ["USB"]
+#prev_URL = ""
+click_URI = {}
+folder_items = 0
+key_track_selected = 0
+key_library_selected = [0] # offset from libi (from 1st lib item at top)
