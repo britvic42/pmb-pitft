@@ -1,3 +1,31 @@
+About this:
+===========
+
+This is a fork of ISO-B's pmb-pitft project with a few additions.
+
+Additions:
+==========
+
+- support for 3.5" tft screens with 480x320px
+- additional screen for library file browsing - page-by-page touch swipe through library folders, folders/tracks can be added to playlist
+- additional screen for playlist browsing - delete tracks/whole playlist
+- additional screen for MPD settings (repeat/consume/refresh etc)
+- cover art 'cover.jpg' taken from folder of current song
+- sample rate / filetype displayed
+- IRKey remote - playback control and playlist/library browse functions accessed from Adafruit IRKey remote(USB k/board)
+
+
+Installing:
+===========
+
+Follow the original install instructions to get your screen working, as shown in the original readme, shown below. 
+
+
+
+Notes:
+======
+
+
 PMB-PiTFT (Pi MusicBox PiTFT) is small Python program/script/whatever that uses mopidy's mpd-api to show controlling ui on Raspberry Pi's screen.
 
 Features:
