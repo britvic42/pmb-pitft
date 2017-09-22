@@ -47,7 +47,7 @@ To Do:
 ======
 
  - smooth scrolling through the library & playlist when swiping (rather than a page-by-page scrolling)
- - Swiping on the mainscreen to go to the library/playlist and settings screens. ie. swipe left to go to the playlist, swipe right to go to the music library list
+ - Swiping (with the screen 'sliding' to display the new screen) on the mainscreen to go to the library/playlist and settings screens. ie. swipe left to go to the playlist, swipe right to go to the music library list
  - list library by artwork rather than showing folders
  - clean up the code, utilizing proper OOP techniques.
 
