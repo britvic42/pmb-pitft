@@ -3,6 +3,7 @@ About this:
 
 This is a fork of ISO-B's pmb-pitft project with a few additions. This was running on a RPi 2 with an Adafruit 3.5" TFT resistive screen and Volumio 1.55.
 
+![pmb-pitft](https://volumio.org/forum/resources/modified-pmb-pitft-touch-interface-control-mpd/1168)
 
 Additions:
 ==========
